@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+img {
+  width: 69%;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */  
+  transition: 0.3s;
+}
+img:hover {
+  width: 66%;
+  transition: 0.2s;
+}
+
+/* navbar */
+header {
+  width: 100%;
+  height: 60px;
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  background-color: rgb(18, 18, 18);
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */  
+}
+.logo a{
+  color: white;
+  font-size: 22px;
+}
+.ig {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.ig a{
+  color: white;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px 20px 9px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.ig a img {
+  width: 20%;
+}
+.ig .shopee {
+  padding: 8px 8px;
+}
+.ig a:hover {
+  transition: 0.2s;
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Sale */
+.sale {
+  height: auto;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 22px;
+}
+.sale .upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+  padding: 20px;
+  border: 1px dashed rgb(21, 21, 21);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.sale .upper:hover {
+  border-style: solid;
+  transition: 0.5s;
+}
+.sale .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sale .container {
+  padding-bottom: 38px;
+  width: 30%;
+}
+.sale .buttons a {
+  color: black;
+  text-decoration: underline;
+}
+.sale .price {
+  display: flex;
+  flex-direction: column;
+}
+.sale .shop {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sale .shop a {
+  color: black;
+  font-weight: 500;
+}
+.sale .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.shopee, .tokopedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopee:hover {
+  text-decoration: underline;
+}
+.shopee img {
+  width: 30%;
+}
+.tokopedia img {
+  width: 10%;
+}
+#priceBefore {
+  text-decoration: line-through; 
+  font-size: 14px;
+}
+#priceAfter {
+  font-size: 18px; 
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  height: auto;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  width: 100%;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  text-align: center;
+}
+.about ul {
+  padding: 13.2% 1%;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  font-weight: 450;
+  transition: 0.3s;
+  background-color: rgb(11, 11, 11);
+}
+.about ul:hover {
+  color: white;
+  background-color: rgb(31, 31, 31);
+  transition: 0.5s;
+}
+.about img {
+  width: 35%;
+  border-radius: 4px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.about img:hover{
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.about .content {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(21,21,21);
+  color: rgb(101, 101, 101);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */  
+  font-weight: 450;
+  font-size: 16px;
+}
+@media only screen and (max-width: 900px) {
+  .sale {
+    padding-top: 18%;
+    padding-bottom: 14%;
+  }
+  .sale .upper {
+    flex-direction: column;
+  }
+  .sale .content {
+    flex-direction: column;
+  }
+  img {
+    width: 69%;
+  }
+  .sale .container {
+    width: 100%;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .about img {
+    width: 75%;
+  }
+  .about ul {
+    padding: 12% 16%;
+  }
+}
+  
